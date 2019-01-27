@@ -58,3 +58,30 @@ git init
 git status
 git add
 git reset
+
+staging area - copy of the most recent commit untill added more changes to it.
+
+git diff with no arguement will show the diff between changes to working directory and staging area. (git add is used to add files to staging area)
+
+git reset --hard -  discards the changes in the working directory or the staging area (Be very careful as it is not reversible)
+
+git diff --staged - compare staging area to most recent commit
+
+git checkout master - to leave head detached stage
+
+it shows (master +) if there are changes to be commited
+it shows (master *) if there are changes not staged for commit
+
+git branch <branch name> 
+git branch - list all branches
+git checkout <branch name> - to change the branch
+
+remote branch - i didnt create it myself
+
+git log --graph --oneline master coins  -to see the visual representation of the commit history
+
+detached head - checkout a commit, not a branch
+
+git checkout -b <new-branch-name> = git branch <new-branch-name> + git checkout <new-branch-name>
+
+git show commit_id- to compare a commit to its parent
